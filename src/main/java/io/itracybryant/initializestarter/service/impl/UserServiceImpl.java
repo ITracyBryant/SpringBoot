@@ -21,6 +21,7 @@ import java.util.List;
  * @Date 2018/12/14 16:52
  * @Version 1.0
  */
+@SuppressWarnings("ALL")
 @Service
 public class UserServiceImpl implements UserService {
 
