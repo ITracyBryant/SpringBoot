@@ -30,6 +30,7 @@
 
 
         <table tableName="it_user"></table>
+        <table tableName="it_item"></table>
 
     </context>
 </generatorConfiguration>

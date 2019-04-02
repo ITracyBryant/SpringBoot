@@ -75,12 +75,14 @@ URL:<br/>
 <table>
     <tr>
         <th>姓名</th>
+        <th>密码</th>
         <th>年龄</th>
         <th>年龄备注</th>
         <th>生日</th>
     </tr>
     <tr th:each="person:${userList}">
         <td th:text="${person.name}"></td>
+        <td th:text="${person.password}"></td>
         <td th:text="${person.age}"></td>
         <td th:text="${person.age gt 18} ? 你老了 : 你很年轻">18岁</td>
         <td th:text="${#dates.format(user.birthday, 'yyyy-MM-dd hh:mm:ss')}"></td>
