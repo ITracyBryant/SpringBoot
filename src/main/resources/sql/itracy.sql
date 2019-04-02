@@ -193,6 +193,29 @@ INSERT INTO `it_user` VALUES ('171020FWN55RS5AW', 'test1001', '75a5298456daeb532
 INSERT INTO `it_user` VALUES ('1803269654BP2428', 'Mon Mar 26 12:55:11 CST 2018', 'abc123', 'Mon Mar 26 12:55:11 CST 2018', null, null, null, null, null, null, null, null, null, null, null, '0', '2018-03-26 12:55:11');
 
 -- ----------------------------
+-- Table structure for it_item
+-- ----------------------------
+DROP TABLE IF EXISTS `it_item`;
+CREATE TABLE `it_item`(
+    `id` int(20) NOT NULL AUTO_INCREMENT,
+    `variety` varchar(255) NOT NULL COMMENT '品种',
+    `authorization` varchar(255) NOT NULL COMMENT '标的',
+    `subject_price` varchar(255) NOT NULL COMMENT '标的价格',
+    `bid_price` varchar(255) NOT NULL COMMENT '买价',
+    `sell_price` varchar(255) NOT NULL COMMENT '卖价',
+    PRIMARY KEY(`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='数据项目表';
+
+-- ----------------------------
+-- Records of it_user
+-- ----------------------------
+INSERT INTO `it_item` VALUES ('1', 'PTA', 'TA905', '5846.00', '154.94', '190.21');
+INSERT INTO `it_item` VALUES ('2', '铁矿石', 'I1905', '460.00', '12.78', '15.00');
+INSERT INTO `it_item` VALUES ('3', '螺纹钢', 'RB1905', '3331.00', '87.71', '103.63');
+INSERT INTO `it_item` VALUES ('4', '沪金', 'AU1906', '279.00', '2.46', '3.13');
+INSERT INTO `it_item` VALUES ('5', '原油', 'SC1903', '427.90', '15.57', '18.15');
+
+-- ----------------------------
 -- Table structure for sys_user_role
 -- ----------------------------
 DROP TABLE IF EXISTS `sys_user_role`;
